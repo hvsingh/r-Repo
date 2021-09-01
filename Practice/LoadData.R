@@ -1,0 +1,1 @@
+lolo=read.table("Auto.data",header=T,na.strings="?")
