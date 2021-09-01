@@ -42,6 +42,10 @@ x=rnorm(n=50, mean=0,sd=1)
 x
 y=x+rnorm(n=50, mean=0,sd=50)
 y
+#generating a seq
+x=seq(1:10)
+x=1:20
+x=seq(1, 20, length=40)
 
 #Mean variance and correlation 
 mean(x)
