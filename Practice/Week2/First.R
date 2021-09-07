@@ -5,6 +5,13 @@ x <- c(1,2,3)
 #This is another one way to assign values to the variable y
 y = c(1,6,2)
 
+# List is a special vector, which can have different members, 
+# not necessarily from the same class
+mylist <- list(name="John Doe", wife="Catherine Doe", no.kids=2,
+               kids.ages=c(11, 16))
+
+#names gives the header of data
+
 #length can give the length of the variable
 length(x)
 length(y)

@@ -1,6 +1,15 @@
+#This example needs to install ISLR package, make sure it is installed before progressing
+    #install.packages('ISLR')
+#next import the library
+    #library(ISLR)
+
 #initialize the array
 A=matrix(1:16,4,4)
 A
+
+#peaking in the data, looking at the first row header, or first column header respectively
+names(mtcars);
+row.names(mtcars);
 
 #Pick 1 element
 A[2][1]
@@ -23,5 +32,12 @@ A [, 1:2] #prinitng multiple column
 # Or you can select all except ones mentioned
 A[-c(1,3),] # will print all rows except 1 and 3; all columns
 
+#Arrays can also be indesxed based on the names of the strucutres
+mtcars[c("Mazda RX4", "Duster 360"), c("mpg", "cyl", "hp")]
+#Or can be indexed as a combination of headers and numbers
+mtcars[c(3,6,7), c("mpg", "cyl", "hp")]
+
 #to find the dimenstions of a matrix or vector use dim
 dim(A)
+
+
